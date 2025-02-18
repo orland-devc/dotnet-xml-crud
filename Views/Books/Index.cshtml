@@ -3,12 +3,12 @@
     Index.cshtml
 *@
 @{
-    ViewBag.Title = "Books";
+    ViewBag.Title = "Book Collection";
 }
 
 <div class="card shadow-sm">
     <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
-        <h1 class="h3 mb-0 text-primary">Books Collection</h1>
+        <h1 class="h3 mb-0 text-primary">@ViewData["Title"]</h1>
         <a asp-action="Create" class="btn btn-primary">
             <i class="fas fa-plus-circle me-2"></i>Add New Book
         </a>
